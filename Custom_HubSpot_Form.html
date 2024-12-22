@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom HubSpot Form</title>
+    <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
+    <style>
+        /* Styling the form container */
+        .hs-form {
+            background-color: #FFFFFF; /* Form Background */
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        /* Styling input fields */
+        .hs-form input,
+        .hs-form textarea,
+        .hs-form select {
+            background-color: #F4F4F9; /* Input Background */
+            border: 1px solid #26242C; /* Input Border */
+            color: #3F3A52; /* Text Color */
+            padding: 10px;
+            border-radius: 4px;
+            width: 100%;
+        }
+
+        /* Styling labels */
+        .hs-form label {
+            color: #3F3A52; /* Label Text */
+            font-weight: bold;
+        }
+
+        /* Placeholder styling */
+        .hs-form input::placeholder,
+        .hs-form textarea::placeholder {
+            color: #3F3A52; /* Placeholder Text */
+        }
+
+        /* Styling the submit button */
+        .hs-form input[type="submit"] {
+            background-color: #AC6AFF; /* Button Background */
+            color: #FFFFFF; /* Button Text */
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+
+        /* Hover effect for submit button */
+        .hs-form input[type="submit"]:hover {
+            background-color: #FF776F; /* Hover Background */
+        }
+
+        /* Input focus styling */
+        .hs-form input:focus,
+        .hs-form textarea:focus,
+        .hs-form select:focus {
+            border-color: #AC6AFF; /* Input Focus Border */
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        hbspt.forms.create({
+            portalId: "47990825",
+            formId: "87946d93-73bf-4bbb-8a9e-f03bb11affcd"
+        });
+    </script>
+</body>
+</html>

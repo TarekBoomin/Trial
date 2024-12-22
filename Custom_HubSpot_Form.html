@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,6 +11,9 @@
             background-color: #FFFFFF; /* Form Background */
             padding: 20px;
             border-radius: 8px;
+            max-width: 600px; /* Set max-width for the form */
+            margin: 0 auto; /* Center the form horizontally */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
         }
 
         /* Styling input fields */
@@ -23,13 +25,17 @@
             color: #3F3A52; /* Text Color */
             padding: 10px;
             border-radius: 4px;
-            width: 100%;
+            width: calc(100% - 22px); /* Full width minus padding and border */
+            margin-bottom: 15px; /* Space between inputs */
+            box-sizing: border-box; /* Include padding and border in width calculation */
         }
 
         /* Styling labels */
         .hs-form label {
             color: #3F3A52; /* Label Text */
             font-weight: bold;
+            margin-bottom: 5px;
+            display: block;
         }
 
         /* Placeholder styling */
@@ -48,6 +54,7 @@
             cursor: pointer;
             border-radius: 4px;
             transition: background-color 0.3s ease;
+            width: calc(100% - 40px); /* Adjust width for responsiveness */
         }
 
         /* Hover effect for submit button */
@@ -61,6 +68,7 @@
         .hs-form select:focus {
             border-color: #AC6AFF; /* Input Focus Border */
             outline: none;
+            box-shadow: 0 0 5px rgba(172, 106, 255, 0.5); /* Add focus glow */
         }
     </style>
 </head>
